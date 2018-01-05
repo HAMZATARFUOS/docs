@@ -441,7 +441,7 @@ We now support the use case where you can customize the appearance of a Journey 
 | `$journeys_button_get_no_app` | The call to action button when the app is **not** currently installed | "Install App" |
 | `$journeys_title` | The title or main text of your Journey | "Download Appsolutely today" |
 | `$journeys_description` | This is the description or subtitle in the frame | "This app is disrupting apps" |
-| `$journeys_icon_image_url` | The app icon displayed in the layout | "https://mysite.com/image.png)" |
+| `$journeys_icon_image_url` | The app icon displayed in the layout.  *To leverage this, the icon field in the banner template must contain the liquid tag `{{$journeys_icon_image_url}}` | "https://mysite.com/image.png" |
 
 Note that not all template support all override keys. For example, the floating button does not support title, description or icon image url. If a template is to be rendered and the key you've specified does not exist, we'll simply ignore it while rendering the template.
 
